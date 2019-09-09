@@ -3,6 +3,33 @@
     <head>
         <title>HTML연습</title>
         <meta charset="uft-8" />
+        <link rel="stylesheet"
+        type="text/css" href="default.css" />
+        <style>
+            h1{
+                color: blue;
+            }
+            h2{
+                color: pink;
+            }
+            a{
+
+            }
+            .class_name{
+                /* .class 중복가능 */
+                color: gray;
+            }
+            #id_name{
+                /* #id 중복불가 */
+                color: violet;
+            }
+
+            *{
+                font-weight: bold;
+                /* css 초기화 */
+            }
+        </style>
+
     </head>
     <body>
         <a href="index.html">뒤로가기</a>
@@ -11,7 +38,7 @@
 
         <!-- h1 ~ h6 순번X, 깊이(depth) O -->
         <h1>대제목 </h1>
-        <h2>중제목</h2>
+        <h2 style="color: green;">중제목1</h2>
         <h3>소제목</h3>
         <h4>세부</h4>
         <h2>중제목2</h2>
@@ -31,8 +58,8 @@
         <h2> 비 순차적 목록 </h2>
         목록을 순서에 관계없이 나열할 때
         <ul>
-            <li>물 100ml</li>
-            <li>설탕 100g</li>
+            <li class="_name">물 100ml</li>
+            <li id="_name">설탕 100g</li>
             <li>소금 100g</li>
         </ul>
         
@@ -52,5 +79,74 @@
             <dd>설명</dd>
         </dl>
 
+        <!-- a, anchor 닻 -->
+        <a href=" ./../DP2019/training.html">버튼</a>
+
+        <!-- img image 이미지 -->
+        <img src="images/joy.jpg" width="100px" />
+        <img src="./images/joy.jpg" height="100px" />
+
+        <!-- strong, em <> b, i -->
+        <strong>강한 강조</strong>
+        <b>볼드체</b>
+
+        <em>강조</em>
+        <i>이텔릭체(기울임 글꼴)</i>
+
+        <!-- ins, del <> u, strike -->
+        <ins>삽입글 (첨부)</ins>
+        <u>밑줄</u>
+
+        <del>삭제글</del>
+        <strike>중앙선</strike>
+
+        <!-- sup 윗첨자, sub 아랫첨자 -->
+        2<sup>2</sup> : 2의 2승
+        H<sub>2</sub>0 : 믈의 원소기호
+
+        <!-- table 도표, tr : table low 테이블행, td : table data 칸 -->
+        <!-- table, tr, td -->
+
+        <style>
+            table,tr,td{border: solid 1px black}
+        </style>
+        <!-- rowspan 행 확장, colspan 열 확장 -->
+        <table summary="학과별 학번, 이름, 전화번호 정보">
+            <caption>[표2-1] 학과별 전화번호</caption>
+
+            <!-- thead, tbody, tfoot -->
+            <thead>
+                    <tr>
+                        <!-- scope :컬럼이라는 곳의 글입니다. -->
+                            <th scope="col">제목1</th>
+                            <th scope="col">제목2</th>
+                            <th scope="col">제목3</th>
+                            <th scope="col">제목4</th>
+                            <th scope="col">제목5</th>
+                    </tr>
+            </thead>
+
+            <tr>
+                <td colspan="2">1</td> <!-- 가로로 2칸 차지하기 -->
+                <td rowspan="2">2</td> <!-- 세로로 2칸 차지하기-->
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            
+        </table>
+
+        <!-- div division 구획 구분 (블록형) -->
+        <div>내용</div>
+        <!-- span 구획 구분 (라인형) -->
+        <span>내용</span>
+        <!-- 의미없이 사용하는 경우가 많음 -->
+
+        
     </body>
 </html>
