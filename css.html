@@ -57,6 +57,167 @@
         </style>
 
         <a href="#">링크 버튼</a>
+        <style>
+            #boxmodell{
+                background-color: #dddddd;
+                width: 100px;
+                height: 200px;
+                margin: 100px;  /*바깥 여백*/
+                padding: 100px; /*안쪽 여백*/
+                border: solid 1px black; /*경계*/
+                /*경계: 선 종류, 선 두께, 선 색깔*/
+                /*인라인 태그에는 잘 사용하지 않는다*/
+
+            }
+        </style>
+
+        <div id="boxmodell">박스모델1</div>
+        인라인 태그
+
+        <style>
+        /*하위 요소 선택자, 띄어쓰기*/
+        div li{
+            color: coral;
+        }
+        /*자식 요소 선택자, > 부등호 기호*/
+        div>ul>li{
+            text-decoration: underline;
+        }
+        /*선택자 그룹화, 쉼표(,) */
+        div,ul,li{
+            color: blueviolet;
+            /* 16wlstn, 0~9~A~F */
+            color: #000; /* 3자리 컬러코드 #rgb */
+            color: #a441aa; /* 6자리 컬러코드 #rrggbb*/
+            color: rgb(0,0,255); 
+            color: rgb(0%,0%,100%)
+        }
+        </style>
+        <div style="color: blue;"> 
+            container
+            <ul>
+                <li>리스트1</li>
+                <li>리스트2</li>
+                <li>리스트3</li>
+                <li>리스트4</li>
+            </ul>
+        </div>
+
+        <style>
+            .position_test{
+                background-color: #ddd;
+                /*  static 정적인 (기본)*/
+                position: static;
+                /* absolute 절대적인*/
+                /* top, left, right, bottom 
+                위치 조종 가능*/
+                position: absolute;
+                top: 100px;
+                left: 100px;
+                /* fixed 고정된 */
+                position: fixed;
+            }
+        </style>
+        <div class="position_test">
+            position_test
+
+        </div>
+
+        <style>
+            .font_test{
+                font-family: "Garamond" , Dotum , "굴림" , Gulim , sans-serif;
+                /* small, large, medium */
+                font-size: 10px;
+                /* normal, bold, bolder */
+                font-weight: bolder;
+                /* normal, italic, oblique */
+                font-style: italic;
+                /* normal, small-caps */
+                font-variant: small-caps;
+                /* left, center, right */
+                /* inline 요소에만 적용됨 */
+                text-align: center;
+
+                height: 150px;
+                background-color: #ddd;
+
+                /* none, underline, overline, line-throuugh */
+                text-decoration: underline;
+            }
+        </style>
+
+        <div class="font_test">
+            AbCdeFghijKlMNoP
+            container
+            font_test
+            <img width="50px" src="images/joy.jpg"/>
+        </div>
+
+        <style>
+            .letter_line{
+                /* 글자 사이의 간격 */
+                letter-spacing: 10px;
+                /* 줄 간격 */
+                line-height: 30px;
+                /* 들여쓰기*/
+                text-indent: 50px;
+            }
+        </style>
+        <div class="letter_line">
+                Share this selection
+                You are viewing a selection of fonts, including 1 typeface in 1 style from the Google Fonts catalog. To share, copy and send the URL for this page. The URL does not expire and can be viewed by anyone.
+                
+                1. Embed
+                To embed these fonts into a webpage, copy this code into the head of your HTML document.
+                
+                STANDARD @IMPORT
+                link href=httpsfonts.googleapis.com/css?family Playfair+Display&displayswap" rel="stylesheet"
+                2. Specify in CSS
+                Use the following CSS properties to specify these families:
+                
+                font-family: 'Playfair Display', serif;
+                For examples of how fonts can be added to webpages, see the getting started guide.
+        </div>
+
+        <style>
+        .text-transform{
+            text-transform: lowercase;
+        }
+        </style>
+        <div class="text-transform">
+            ABcdEfGHi
+        </div>
+
+        <style>
+            .pre{
+                white-space: pre;
+            }
+        </style>
+        <!-- &nbsp; 띄어쓰기, <br/>줄내림 -->
+
+        <div class="pre">
+            1 2 3        4 5 6
+            7 8 9 0
+        </div>
+
+        <style>
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+            @IMPORT url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+            /* import url 들여오기 주소 */
+			.google_font{
+				font-family: 'Nanum Pen Script', cursive;
+                /* import후 들여오기 된 폰트의 이름을 명시하여 사용함 */
+                font-family: 'Playfair Display', serif;
+			}
+        </style>
+        
+        <div class="google_font">
+            google_font
+
+        </div>
+
+        
+
 
     </body>
 </html>
