@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>free_layout</title>
+        <meta charset="utf-8"/>
+    <style>
+    body{
+        margin:0px; 
+    }
+    header{
+        color: rgb(52, 52, 52); 
+        padding: 10px 50px; 
+    }
+    header li{
+        float: left;
+        list-style: none;
+        padding: 0px 10px;
+    }
+    .clear{
+        clear:both; height: 0px; overflow:hidden; 
+    }
+    header>h1{
+        float:left;
+        margin: 0px;
+    }
+    header>nav{
+        float: right;
+    }
+    #main_visual>h2{
+        width: 1920px;
+        margin: 10px auto;
+        letter-spacing: 10px;
+        font-size: 70px;
+    }
+    #title_bottom{
+        font-size: 25px;
+        width: 900px;
+        height: 100px;
+        float: left;
+        margin: 10px auto;
+        letter-spacing: 10px; 
+    }
+    #main_visual>img{
+        float: right;
+        width: 1080px;
+        height: 1140px;
+    }
+    #main_visual>h2{
+        float: left;
+    }
+    section{
+        text-align: center;
+    }
+    section>h3{
+        color: #ffae00;
+        font-weight: normal;
+        font-size: 50px;
+        float: left;
+        margin: 50px 0px 0px 350px;
+    }
+    section>p{                                
+        width:  650px;
+        margin: 30px auto;
+    }
+    section>#about_list{
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section>#music{
+        float:left;
+    }
+    section>#work_list>li{
+        float: left;
+        list-style: none;
+        width: 25%;
+    }
+    section>#work_list>li>img{
+        display: inline; 
+        display: block;
+        width: 100%;
+    }
+    section>#work_list{
+        padding: 0px;
+    }
+    #wrap{
+        min-width: 1000px;
+        max-width: 1920px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+        <div id="wrap">
+        <a href="index.html">뒤로가기</a>
+            <header>
+                <nav>
+                    <ul>
+                        <img src="images/bar.png">
+                        <li>Home</li>
+                        <li>ost</li>
+                        <li>theatrical version</li>
+                        <li>production</li>
+                        <li>about</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+        <div id="main_visual">
+                <h2>Pat&Mat</h2>
+                <div id="title_bottom">Barrandov Animation Studios</div>
+                <img src="images/pat_1.jpg">
+        </div>
+        <section>
+        <h3>OST</h3>
+        <div id="music">
+        <p> Luboš Fišer (1976)
+            <br>
+            Petr Skoumal (1979~2014)
+            <br>
+            Zdeněk Zdeněk (2018~현재)
+        </p>
+        </id>
+        <ul id="about_list">
+                <img src="images/music.jpg" >
+        </ul>
+        </section>
+        <section>
+            <div class="clear"></div>
+            <ul id="work_list">
+                <li><img src="images/pat2.jpg"></li>
+                <li><img src="images/pat3.jpg"></li>
+                <li><img src="images/pat4.jpg"></li>
+                <li><img src="images/pat5.jpg"></li>
+                <div class="clear"></div>
+            </ul>
+        </section>
+        <footer></footer>
+    </body>
+</html>
