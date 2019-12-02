@@ -9,7 +9,7 @@
     }
     header{
         color: rgb(52, 52, 52); 
-        padding: 10px 50px; 
+        padding: 10px 20px; 
     }
     header li{
         float: left;
@@ -19,34 +19,33 @@
     .clear{
         clear:both; height: 0px; overflow:hidden; 
     }
-    header>h1{
-        float:left;
-        margin: 0px;
-    }
     header>nav{
         float: right;
+    }
+    header>nav>ul>li:nth-child(6){
+        padding: 0px 60px 0px 10px;
     }
     #main_visual>h2{
         width: 1920px;
         margin: 10px auto;
         letter-spacing: 10px;
         font-size: 70px;
+        float: left;
+        margin: 20px 0px 0px 20px;
     }
     #title_bottom{
         font-size: 25px;
         width: 900px;
         height: 100px;
         float: left;
-        margin: 10px auto;
-        letter-spacing: 10px; 
+        margin: 10px 0px 10px 20px;
+        letter-spacing: 3px; 
     }
     #main_visual>img{
         float: right;
-        width: 1080px;
-        height: 1140px;
-    }
-    #main_visual>h2{
-        float: left;
+        width: 60%;
+        height: 60%;
+
     }
     section{
         text-align: center;
@@ -67,6 +66,19 @@
         margin-left: auto;
         margin-right: auto;
     }
+    section>#musicplayer{
+       
+        width: 40%;
+        height: 40%;
+        float: left;
+    }
+    section>#musicplayer img{
+        width: 50%;
+    }
+    section ul{
+        padding: 0px;
+    }
+
     section>#music{
         float:left;
     }
@@ -91,6 +103,7 @@
     }
     footer{
         float: left;
+        margin: 0px 0px 0px 20px;
     }
     </style>
     </head>
@@ -117,18 +130,20 @@
                 <img src="images/pat_1.jpg">
         </div>
         <section>
-        <h3>OST</h3>
-        <div id="music">
-        <p> Luboš Fišer (1976)
-            <br>
-            Petr Skoumal (1979~2014)
-            <br>
-            Zdeněk Zdeněk (2018~현재)
-        </p>
-        </id>
-        <ul id="about_list">
-                <img src="images/music.jpg" >
-        </ul>
+            <div id="musicplayer">
+                <h3>OST</h3>
+                <div id="music">
+                <p> Luboš Fišer (1976)
+                    <br>
+                    Petr Skoumal (1979~2014)
+                    <br>
+                    Zdeněk Zdeněk (2018~현재)
+                </p>
+                <ul id="about_list">
+                        <img src="images/music.jpg" >
+                </ul>
+            </div>
+            <div class="clear"></div>
         </section>
         <section>
             <div class="clear"></div>
